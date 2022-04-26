@@ -38,64 +38,64 @@ import {
 } from "../../context/LayoutContext";
 
 const structure = [
-  { 
-    id: 0, 
-    label: "Dashboard", 
-    link: "/app/dashboard", 
-    icon: <HomeIcon /> 
+  {
+    id: 0,
+    label: "Dashboard",
+    link: "/app/dashboard",
+    icon: <HomeIcon />
   },
-  { 
-    id: 41, 
-    label: "Manage Merchants", 
-    link: "/app/admin/merchant", 
-    icon: <SupervisorAccount /> 
+  {
+    id: 41,
+    label: "Manage Merchants",
+    link: "/app/admin/merchant",
+    icon: <SupervisorAccount />
   },
-  { 
-    id: 42, 
-    label: "Manage End Users", 
-    link: "/app/admin/enduser", 
-    icon: <SupervisorAccount /> 
+  {
+    id: 42,
+    label: "Manage End Users",
+    link: "/app/admin/enduser",
+    icon: <SupervisorAccount />
   },
-  { 
-    id: 2, 
-    label: "Settings", 
-    link: "#", 
-    icon: <SettingsApplications /> 
+  {
+    id: 2,
+    label: "Settings",
+    link: "/app/settings",
+    icon: <SettingsApplications />
   },
-  { 
-    id: 43, 
-    label: "Developers Key", 
-    link: "#", 
-    icon: <DeveloperMode /> 
+  {
+    id: 43,
+    label: "Developers Key",
+    link: "/app/developers-key",
+    icon: <DeveloperMode />
   },
-  { 
-    id: 1, 
-    label: "Notifications", 
-    link: "#", 
-    icon: <NotificationsIcon /> 
+  {
+    id: 1,
+    label: "Notifications",
+    link: "/app/notifications",
+    icon: <NotificationsIcon />
   },
   {
     id: 7,
     label: "Contact Us",
-    link: "#",
+    link: "/app/contact-us",
     icon: <ContactSupport />,
   },
   {
     id: 15,
     label: "FAQ",
-    link: "#",
+    link: "/app/faq",
     icon: <QuestionAnswer />,
   },
   {
     id: 9,
     label: "Terms & Services",
-    link: "#",
+    link: "/app/terms-and-services",
     icon: <Security />,
   },
   {
     id: 8,
     label: "Privacy Policy",
-    link: "#",
+    link: "/app/privacy-policy",
     icon: <VpnKey />,
   },
 ];
@@ -111,7 +111,7 @@ function AdminSidebar({ location }) {
   // local
   var [isPermanent, setPermanent] = useState(true);
 
-  useEffect(function() {
+  useEffect(function () {
     window.addEventListener("resize", handleWindowWidthChange);
     handleWindowWidthChange();
     return function cleanup() {

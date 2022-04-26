@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Settings = () => {
     return (
@@ -78,25 +78,25 @@ const Settings = () => {
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>First Name</label>
-                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Enter First Name" autofocus="" required="" id="name" />
+                                                                    <input type="text" className="form-control field" name="holdername" placeholder="First Name" autofocus="" required="" id="name" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Last Name</label>
-                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Enter Last Name" autofocus="" required="" id="name" />
+                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Last Name" autofocus="" required="" id="name" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Email ID</label>
-                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Enter Email ID" autofocus="" required="" id="name" />
+                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Email ID" autofocus="" required="" id="name" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Contact Number</label>
-                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Enter Contact Number" autofocus="" required="" id="name" />
+                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Contact Number" autofocus="" required="" id="name" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
@@ -115,7 +115,7 @@ const Settings = () => {
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Address</label>
-                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Enter Address" autofocus="" required="" id="name" />
+                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Address" autofocus="" required="" id="name" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
@@ -163,7 +163,7 @@ const Settings = () => {
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Postal/ZIP Code</label>
-                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Enter Postal/ZIP Code" autofocus="" required="" id="name" />
+                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Postal/ZIP Code" autofocus="" required="" id="name" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-12">
@@ -241,7 +241,8 @@ const Settings = () => {
                 </footer>
             </div>
         </>
-    )
-}
+    );
+};
 
 export default Settings;
+
