@@ -88,7 +88,7 @@ const structure = [
   {
     id: 7,
     label: "Contact Us",
-    link: "/app/merchant/contactus",
+    link: "/app/merchant/contact-us",
     icon: <ContactSupport />,
   },
   {

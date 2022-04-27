@@ -75,7 +75,7 @@ function Layout(props) {
             <Route path="/app/ui/charts" component={Charts} />
             <Route path="/app/settings" component={Settings} />
             <Route path="/app/notifications" component={Notifications} />
-            <Route path="/app/contactus" component={Contactus} />
+            <Route path="/app/contact-us" component={Contactus} />
             <Route path="/app/faq" component={FAQ} />
             <Route path="/app/terms-and-services" component={Termsandservices} />
             <Route path="/app/privacy-policy" component={Privacypolicy} />

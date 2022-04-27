@@ -66,7 +66,7 @@ function MerchantLayout(props) {
             <Route path="/app/merchant/payments" component={Payments} />
             <Route path="/app/merchant/settings" component={Settings} />
             <Route path="/app/merchant/notifications" component={Notifications} />
-            <Route path="/app/merchant/contactus" component={Contactus} />
+            <Route path="/app/merchant/contact-us" component={Contactus} />
             <Route path="/app/merchant/terms-and-services" component={Termsandservices} />
             <Route path="/app/merchant/privacy-policy" component={Privacypolicy} />
             <Route path="/app/merchant/faq" component={FAQ} />

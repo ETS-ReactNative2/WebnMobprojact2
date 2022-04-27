@@ -72,7 +72,7 @@ const structure = [
   {
     id: 7,
     label: "Contact Us",
-    link: "/app/contactus",
+    link: "/app/contact-us",
     icon: <ContactSupport />,
   },
   {
