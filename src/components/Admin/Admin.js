@@ -35,7 +35,7 @@ useEffect(()=>{
 },[])
 
   return (
-      <>
+      <div className={classes.container}>
       <PageTitle title="Admin" button={<Button
       variant="contained"
       size="medium"
@@ -75,6 +75,6 @@ useEffect(()=>{
         </Grid>
       </Grid>
       </Paper>
-    </>
+    </div>
   );
 }

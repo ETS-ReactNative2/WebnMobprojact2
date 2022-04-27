@@ -48,7 +48,7 @@ export default function Dashboard(props) {
   var [mainChartState, setMainChartState] = useState("monthly");
 
   return (
-    <>
+    <div className={classes.container}>
       <PageTitle title="Dashboard" button={<Button
       variant="contained"
       size="medium"
@@ -306,7 +306,7 @@ export default function Dashboard(props) {
           </Widget>
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 }
 

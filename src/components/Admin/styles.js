@@ -12,6 +12,9 @@ export default makeStyles(theme => ({
   text: {
     marginBottom: theme.spacing(2),
   },
+  container: {
+    padding: theme.spacing(3)
+  }
 
   
 }));

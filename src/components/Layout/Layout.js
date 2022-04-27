@@ -80,14 +80,14 @@ function Layout(props) {
             <Route path="/app/terms-and-services" component={Termsandservices} />
             <Route path="/app/privacy-policy" component={Privacypolicy} />
           </Switch>
-          <Box
-            mt={5}
-            width={"100%"}
-            display={"flex"}
-            alignItems={"center"}
-            justifyContent="space-between"
-          >
-          </Box>
+          {/*<Box*/}
+          {/*  mt={5}*/}
+          {/*  width={"100%"}*/}
+          {/*  display={"flex"}*/}
+          {/*  alignItems={"center"}*/}
+          {/*  justifyContent="space-between"*/}
+          {/*>*/}
+          {/*</Box>*/}
         </div>
       </>
     </div>
