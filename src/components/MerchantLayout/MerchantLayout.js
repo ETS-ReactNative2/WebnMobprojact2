@@ -74,7 +74,7 @@ function MerchantLayout(props) {
             <Route path="/app/merchant/logout" component={Logout} />
           </Switch>
           <Box
-            mt={5}
+            mt={0}
             width={"100%"}
             display={"flex"}
             alignItems={"center"}

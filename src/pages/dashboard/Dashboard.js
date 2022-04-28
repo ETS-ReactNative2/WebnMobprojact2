@@ -50,12 +50,12 @@ export default function Dashboard(props) {
   return (
     <div className={classes.container}>
       <PageTitle title="Dashboard" button={<Button
-      variant="contained"
-      size="medium"
-      color="secondary"
-    >
+        variant="contained"
+        size="medium"
+        color="secondary"
+      >
         Latest Reports
-    </Button>} />
+      </Button>} />
       <Grid container spacing={4}>
         <Grid item lg={3} md={4} sm={6} xs={12}>
           <Widget
@@ -67,30 +67,30 @@ export default function Dashboard(props) {
             <div className={classes.visitsNumberContainer}>
               <Grid container item alignItems={"center"}>
                 <Grid item xs={6}>
-              <Typography size="xl" weight="medium" noWrap>
-                12, 678
-              </Typography>
+                  <Typography size="xl" weight="medium" noWrap>
+                    12, 678
+                  </Typography>
                 </Grid>
                 <Grid item xs={6}>
-              <LineChart
-                width={100}
-                height={30}
-                data={[
-                  { value: 10 },
-                  { value: 15 },
-                  { value: 10 },
-                  { value: 17 },
-                  { value: 18 },
-                ]}
-              >
-                <Line
-                  type="natural"
-                  dataKey="value"
-                  stroke={theme.palette.success.main}
-                  strokeWidth={2}
-                  dot={false}
-                />
-              </LineChart>
+                  <LineChart
+                    width={100}
+                    height={30}
+                    data={[
+                      { value: 10 },
+                      { value: 15 },
+                      { value: 10 },
+                      { value: 17 },
+                      { value: 18 },
+                    ]}
+                  >
+                    <Line
+                      type="natural"
+                      dataKey="value"
+                      stroke={theme.palette.success.main}
+                      strokeWidth={2}
+                      dot={false}
+                    />
+                  </LineChart>
                 </Grid>
               </Grid>
             </div>

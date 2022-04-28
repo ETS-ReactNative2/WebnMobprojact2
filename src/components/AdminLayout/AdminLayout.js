@@ -79,7 +79,7 @@ function AdminLayout(props) {
             <Route path="/app/privacy-policy" component={Privacypolicy} />
           </Switch>
           <Box
-            mt={5}
+            mt={0}
             width={"100%"}
             display={"flex"}
             alignItems={"center"}

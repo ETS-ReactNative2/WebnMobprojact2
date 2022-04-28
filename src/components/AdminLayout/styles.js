@@ -6,9 +6,12 @@ export default makeStyles(theme => ({
     maxWidth: "100vw",
     overflowX: "hidden",
   },
+  container : {
+    padding : theme.spacing(3),
+  },
+  
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
     width: `calc(100vw - 240px)`,
     minHeight: "100vh",
   },

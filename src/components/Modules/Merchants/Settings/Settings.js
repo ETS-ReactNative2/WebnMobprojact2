@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Settings = () => {
+    const [type, setType] = useState(1)
+
     return (
         <>
             <div className="page-wrapper" style={{ minHeight: '250px' }}>
@@ -16,20 +18,19 @@ const Settings = () => {
                                 <div className="setting-tab-main-area">
                                     <ul className="nav nav-tabs" id="myTab" role="tablist">
                                         <li className="nav-item" role="presentation">
-                                            <button className="nav-link active tab-btn" id="manage-profile-tab" data-bs-toggle="tab" data-bs-target="#manage-profile" type="button" role="tab" aria-controls="manage-profile" aria-selected="false"><i className="fa fa-user" aria-hidden="true">
+                                            <button onClick={() => setType(1)} className={(type == 1) ? "nav-link tab-btn  active" : "nav-link tab-btn "} id="manage-profile-tab" data-bs-toggle="tab" data-bs-target="#manage-profile" type="button" role="tab" aria-controls="manage-profile" aria-selected="false"><i className="fa fa-user" aria-hidden="true">
                                             </i>Manage Profile</button>
                                         </li>
                                         <li className="nav-item" role="presentation">
-                                            <button className="nav-link tab-btn" id="change-password-tab" data-bs-toggle="tab" data-bs-target="#change-password" type="button" role="tab" aria-controls="change-password" aria-selected="true"><i className="fa fa-lock" aria-hidden="true"></i>Change Password</button>
+                                            <button onClick={() => setType(2)} className={(type == 2) ? "nav-link tab-btn  active" : "nav-link tab-btn "} id="change-password-tab" data-bs-toggle="tab" data-bs-target="#change-password" type="button" role="tab" aria-controls="change-password" aria-selected="true"><i className="fa fa-lock" aria-hidden="true"></i>Change Password</button>
                                         </li>
                                         <li className="nav-item" role="presentation">
-                                            <button className="nav-link tab-btn" id="purchase-plan-tab" data-bs-toggle="tab" data-bs-target="#purchase-plan" type="button" role="tab" aria-controls="purchase-plan" aria-selected="false"><i className="fa fa-cart-arrow-down" aria-hidden="true"></i>Purchase Plan</button>
+                                            <button onClick={() => setType(3)} className={(type == 3) ? "nav-link tab-btn  active" : "nav-link tab-btn "} id="purchase-plan-tab" data-bs-toggle="tab" data-bs-target="#purchase-plan" type="button" role="tab" aria-controls="purchase-plan" aria-selected="false"><i className="fa fa-cart-arrow-down" aria-hidden="true"></i>Purchase Plan</button>
                                         </li>
-
                                     </ul>
                                 </div>
                                 <div className="tab-content" id="myTabContent">
-                                    <div className="tab-pane fade show active" id="manage-profile" role="tabpanel" aria-labelledby="manage-profile-tab">
+                                    <div className={(type == 1) ? "tab-pane fade show active" : "tab-pane fade"} id="manage-profile" role="tabpanel" aria-labelledby="manage-profile-tab">
                                         <div className="row">
                                             <div className="col-lg-5">
                                                 <div className="setting-tab-heading-area">
@@ -79,25 +80,25 @@ const Settings = () => {
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>First Name</label>
-                                                                    <input type="text" className="form-control field" name="holdername" placeholder="First Name" autofocus="" required="" id="name" />
+                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Enter First Name" autofocus="" required="" id="name" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Last Name</label>
-                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Last Name" autofocus="" required="" id="name" />
+                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Enter Last Name" autofocus="" required="" id="name" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Email ID</label>
-                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Email ID" autofocus="" required="" id="name" />
+                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Enter Email ID" autofocus="" required="" id="name" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Contact Number</label>
-                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Contact Number" autofocus="" required="" id="name" />
+                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Enter Contact Number" autofocus="" required="" id="name" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
@@ -116,7 +117,7 @@ const Settings = () => {
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Address</label>
-                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Address" autofocus="" required="" id="name" />
+                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Enter Address" autofocus="" required="" id="name" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-6">
@@ -164,7 +165,7 @@ const Settings = () => {
                                                             <div className="col-lg-6">
                                                                 <div className="form-group">
                                                                     <label>Postal/ZIP Code</label>
-                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Postal/ZIP Code" autofocus="" required="" id="name" />
+                                                                    <input type="text" className="form-control field" name="holdername" placeholder="Enter Postal/ZIP Code" autofocus="" required="" id="name" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-12">
@@ -178,7 +179,7 @@ const Settings = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="tab-pane fade" id="change-password" role="tabpanel" aria-labelledby="change-password-tab">
+                                    <div className={(type == 2) ? "tab-pane fade show active" : "tab-pane fade"} id="change-password" role="tabpanel" aria-labelledby="change-password-tab">
                                         <div className="row">
                                             <div className="col-lg-12">
                                                 <div className="setting-tab-heading-area">
@@ -231,6 +232,10 @@ const Settings = () => {
                                         <div className="change-password-submit-area">
                                             <a href="#" className="submit-password-change-btn">Submit</a>
                                         </div>
+                                    </div>
+                                    {/* multiline comment */}
+                                    <div className={(type == 3) ? "tab-pane fade show active" : "tab-pane fade"} id="purchase-plan" role="tabpanel" aria-labelledby="change-password-tab">
+                                        jai sri ram
                                     </div>
                                 </div>
                             </div>
